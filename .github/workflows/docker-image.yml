@@ -26,7 +26,9 @@ jobs:
     - name: Build Docker Image
       run: | 
         docker image build -t lazarito444/docker-graphql:0.0.2 .
+        docker image build -t lazarito444/docker-graphql:latest
     
     - name: Push Docker Image
       run: | 
         docker image push lazarito444/docker-graphql:0.0.2
+        docker image push lazarito444/docker-graphql:latest
